@@ -31,6 +31,17 @@ var examResults = {
     "Artur": 55
 };
 
+// update method of map to update value of our Artur key
+
+examResults.update("Artur", (v)=> v + 5);
+
+// remove method of map to remove key
+examResults.remove("Artur");
+
+
+
+
+// Printing map using forEach loop
 examResults.forEach((student, score){
      String result;
 
