@@ -1,18 +1,18 @@
 //A class is a blueprint for creating objects.
 
-// class 
-// class Person {
-//     // properties 
-//     String name = "";
-//     int age = 0;
+//class 
+class Student {
+    // properties 
+    String name = "";
+    int age = 0;
 
 
-//     // method
-//     void sayHello(){
-//         print("Hello my name is $name");
-//     }
+    // method
+    void sayHello(){
+        print("Hello my name is $name");
+    }
 
-// }
+}
 
 
 
@@ -40,11 +40,16 @@ class Person {
 void main(){
   // object  
   Person p = Person("Alice", 25);
-
-  
-
-
   p.info();
+
+
+  Student talaba = Student();
+
+
+  talaba.name = "Kozim";
+  talaba.age = 26;
+
+  talaba.sayHello();
 
 
 }
