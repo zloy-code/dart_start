@@ -15,12 +15,14 @@ void main(){
 
     // creating stream manually
 
-    Stream<int> counter() async*{
-        for (int i=0; i<5; i++){
-            await Future.delayed(Duration(seconds: 1));
-            yield i;
-        }
-    }
+    // yield Only Works Inside a Generator Function counter()
+
+    // Stream<int> counter() async*{
+    //     for (int i=0; i<5; i++){
+    //         await Future.delayed(Duration(seconds: 1));
+    //         yield i;
+    //     }
+    // }
 
     // counter().listen((event){
     //     print(event);
